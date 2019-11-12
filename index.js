@@ -104,7 +104,7 @@ module.exports.last = last;
 * @param {Array} array: The array will be cycled through with a for loop and the index of the first time the value is seen will be returned.
 * @param {Value} value: The value that will be looked for in the array.
 *
-* @return {Index}: The index of the first occurance of the value will be returned.
+* @return {Number}: The index of the first occurance of the value will be returned.
 * If the value is not in the arrat, -1 will be returned.
 */
 
@@ -122,7 +122,7 @@ module.exports.indexOf = indexOf;
 
 
 /**
-* contains: Designed to return true of the value given is contained within the array.
+* contains: Designed to return true if the value given is contained within the array.
 * 
 * @param {Array} array: The array of values that will be cycled through with a for loop.
 * @param {Value} value: The value that will be searched for within the array.
@@ -275,9 +275,10 @@ module.exports.reject = reject;
 * the collection. The test function must return a boolean based on some
 * logic which tests the value given to it.
 *
-* @return {Array} newArray: An Array containing the two arrays of the 
+* @return {Array} newArray: An Array containing the two sub arrays of the 
 * filtered collection values.
-* (One truthy array, one falsy array).
+* The first sub array will contain the truth values.
+* The second sub array will contain the falsey values.
 */
 
 
@@ -348,9 +349,9 @@ module.exports.map = map;
 * the property for every element in the array.
 *
 * @param {Array} array: The array that will be filtered through.
-* @param {Property} key: The key in every object.
+* @param {Key} key: The key in every object.
 *
-* @return {Value}: The value of every property for every object in the array will be returned.
+* @return {Object[key]}: The value of every property for every object in the array will be returned.
 */
 
 
