@@ -349,9 +349,9 @@ module.exports.map = map;
 * the property for every element in the array.
 *
 * @param {Array} array: The array that will be filtered through.
-* @param {Key} key: The key in every object.
+* @param {String} key: The key in every object.
 *
-* @return {Object[key]}: The value of every property for every object in the array will be returned.
+* @return {Value}: The value of every property for every object in the array will be returned.
 */
 
 
